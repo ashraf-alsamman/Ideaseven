@@ -1,0 +1,428 @@
+fields:
+    news:
+        label: news
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: title
+                    span: auto
+                    type: text
+                description:
+                    label: description
+                    span: auto
+                    type: text
+                author:
+                    label: author
+                    span: auto
+                    type: text
+                category:
+                    label: category
+                    span: auto
+                    type: text
+                mediafinder1:
+                    label: 'Media finder'
+                    span: auto
+                    type: mediafinder
+    title:
+        label: title
+        span: auto
+        type: text
+    solutions:
+        label: solutions
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: title
+                    size: ''
+                    span: auto
+                    type: richeditor
+                description:
+                    label: description
+                    span: auto
+                    type: text
+                request_a_quote:
+                    label: request_a_quote
+                    span: auto
+                    type: text
+                footer:
+                    label: footer
+                    size: ''
+                    span: auto
+                    type: richeditor
+                bg_image:
+                    label: 'bg image'
+                    mode: file
+                    span: auto
+                    type: mediafinder
+                block_1_image:
+                    label: block_1_image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+                block_1_title:
+                    label: block_1_title
+                    span: auto
+                    type: text
+                block_1_description:
+                    label: block_1_description
+                    span: auto
+                    type: text
+                block_1_link:
+                    label: block_1_link
+                    span: auto
+                    type: text
+                block_2_title:
+                    label: block_2_title
+                    span: auto
+                    type: text
+                block_2_description:
+                    label: block_2_description
+                    span: auto
+                    type: text
+                block_2_link:
+                    label: block_2_link
+                    span: auto
+                    type: text
+                block_3_title:
+                    label: block_3_title
+                    span: auto
+                    type: text
+                block_3_description:
+                    label: block_3_description
+                    span: auto
+                    type: text
+                block_3_link:
+                    label: block_3_link
+                    span: auto
+                    type: text
+                block_4_image:
+                    label: block_4_image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+                block_4_title:
+                    label: block_4_title
+                    span: auto
+                    type: text
+                block_4_description:
+                    label: block_4_description
+                    span: auto
+                    type: text
+                block_4_link:
+                    label: block_4_link
+                    span: auto
+                    type: text
+                block_2_image:
+                    label: block_2_image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+                block_3_image:
+                    label: block_3_image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+    services:
+        label: services
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: title
+                    span: auto
+                    type: text
+                icon:
+                    label: icon
+                    mode: file
+                    span: auto
+                    type: mediafinder
+                description:
+                    label: description
+                    span: auto
+                    type: text
+                link:
+                    label: link
+                    span: auto
+                    type: text
+                bg_image:
+                    label: bg_image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+    products:
+        label: products
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: title
+                    span: auto
+                    type: text
+                description:
+                    label: description
+                    span: auto
+                    type: text
+                link:
+                    label: link
+                    span: auto
+                    type: text
+                image:
+                    label: image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+                style:
+                    label: style
+                    span: auto
+                    showSearch: true
+                    options:
+                        blue: blue
+                        red: red
+                    type: dropdown
+    partners:
+        label: partners
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                image:
+                    label: image
+                    span: auto
+                    mode: file
+                    type: mediafinder
+    bg_image:
+        label: bg_image
+        mode: file
+        span: auto
+        type: mediafinder
+    image:
+        label: image
+        mode: file
+        span: auto
+        type: mediafinder
+    description:
+        label: description
+        span: auto
+        size: ''
+        type: richeditor
+    social:
+        label: social
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                link:
+                    label: link
+                    span: auto
+                    type: text
+                icon:
+                    label: icon
+                    span: auto
+                    type: text
+    quick_links:
+        label: quick_links
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                caption:
+                    label: caption
+                    span: auto
+                    type: text
+                link:
+                    label: link
+                    span: auto
+                    type: text
+    posts:
+        label: posts
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: title
+                    span: auto
+                    type: text
+                description:
+                    label: description
+                    span: auto
+                    type: text
+    footer_buttom:
+        label: footer_buttom
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                caption:
+                    label: caption
+                    span: auto
+                    type: text
+                link:
+                    label: link
+                    span: auto
+                    type: text
+    footer_right:
+        label: footer_right
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                caption:
+                    label: caption
+                    span: auto
+                    type: text
+                link:
+                    label: link
+                    span: auto
+                    type: text
+    menu:
+        label: menu
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                caption:
+                    label: caption
+                    span: auto
+                    type: text
+                link:
+                    label: link
+                    span: auto
+                    type: text
+    inner:
+        label: inner
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                block_1_title:
+                    label: block_1_title
+                    span: auto
+                    type: text
+                block_1_image:
+                    label: block_1_image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+                block_1_description:
+                    label: block_1_description
+                    span: auto
+                    type: text
+                block_2_title:
+                    label: block_2_title
+                    span: auto
+                    type: text
+                block_2_description:
+                    label: block_2_description
+                    span: auto
+                    type: text
+                block_2_image:
+                    label: block_2_image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+                block_3_image:
+                    label: block_3_image
+                    mode: file
+                    span: auto
+                    type: mediafinder
+                block_3_title:
+                    label: block_3_title
+                    span: auto
+                    type: text
+                block_3_description:
+                    label: block_3_description
+                    span: auto
+                    type: text
+                block_4_title:
+                    label: block_4_title
+                    span: auto
+                    type: text
+                block_4_description:
+                    label: block_4_description
+                    span: auto
+                    type: text
+                block_list:
+                    label: block_list
+                    prompt: 'Add new item'
+                    span: auto
+                    type: repeater
+                    form:
+                        fields:
+                            title:
+                                label: Text
+                                span: auto
+                                type: text
+                block_many_3:
+                    label: block_many_3
+                    prompt: 'Add new item'
+                    span: auto
+                    type: repeater
+                    form:
+                        fields:
+                            title:
+                                label: title
+                                span: auto
+                                type: text
+                            image:
+                                label: image
+                                mode: file
+                                span: auto
+                                type: mediafinder
+                            description:
+                                label: description
+                                span: auto
+                                type: text
+                block_accordion:
+                    label: block_accordion
+                    prompt: 'Add new item'
+                    span: auto
+                    type: repeater
+                    form:
+                        fields:
+                            title:
+                                label: title
+                                span: auto
+                                type: text
+                            description:
+                                label: description
+                                span: auto
+                                type: text
+                block_many_4:
+                    label: block_many_4
+                    prompt: 'Add new item'
+                    span: auto
+                    type: repeater
+                    form:
+                        fields:
+                            title:
+                                label: title
+                                span: auto
+                                type: text
+                            image:
+                                label: image
+                                mode: file
+                                span: auto
+                                type: mediafinder
+                            description:
+                                label: description
+                                span: auto
+                                type: text

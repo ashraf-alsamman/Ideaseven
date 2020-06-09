@@ -1,0 +1,11 @@
+plugin:
+    name: 'ashraf.intergaz::lang.plugin.name'
+    description: 'ashraf.intergaz::lang.plugin.description'
+    author: ashraf
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    intergaz:
+        label: intergaz
+        url: ashraf/intergaz/intergaz
+        icon: icon-align-justify

@@ -1,0 +1,65 @@
+1591716268a:1:{s:12:"features.htm";a:11:{s:8:"fileName";s:12:"features.htm";s:7:"content";s:982:"title = "features"
+url = "/features"
+layout = "default"
+is_hidden = 0
+show_menu = 0
+
+[builderList]
+modelClass = "Ashraf\Intergaz\Models\Intergaz"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+<ul class="record-list">
+
+    {% for record in records %}
+
+   {% for row in record.all_data %}
+                    {{ row.title }}
+
+ {% endfor %}
+                      {% if record.id == 1 %}
+                    {{ record.title }}
+                {% endif %}
+    
+
+
+               
+
+ 
+    {% endfor %}";s:5:"mtime";i:1591617061;s:6:"markup";s:646:"{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+<ul class="record-list">
+
+    {% for record in records %}
+
+   {% for row in record.all_data %}
+                    {{ row.title }}
+
+ {% endfor %}
+                      {% if record.id == 1 %}
+                    {{ record.title }}
+                {% endif %}
+    
+
+
+               
+
+ 
+    {% endfor %}";s:4:"code";N;s:5:"title";s:8:"features";s:3:"url";s:9:"/features";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"show_menu";s:1:"0";s:11:"builderList";a:8:{s:10:"modelClass";s:31:"Ashraf\Intergaz\Models\Intergaz";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:2:"id";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

@@ -1,0 +1,10 @@
+name: Intergaz
+form: $/ashraf/intergaz/models/intergaz/fields.yaml
+modelClass: Ashraf\Intergaz\Models\Intergaz
+defaultRedirect: ashraf/intergaz/intergaz
+create:
+    redirect: 'ashraf/intergaz/intergaz/update/:id'
+    redirectClose: ashraf/intergaz/intergaz
+update:
+    redirect: ashraf/intergaz/intergaz
+    redirectClose: ashraf/intergaz/intergaz

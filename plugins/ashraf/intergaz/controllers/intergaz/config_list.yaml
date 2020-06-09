@@ -1,0 +1,12 @@
+list: $/ashraf/intergaz/models/intergaz/columns.yaml
+modelClass: Ashraf\Intergaz\Models\Intergaz
+title: Intergaz
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'ashraf/intergaz/intergaz/update/:id'

@@ -1,0 +1,551 @@
+1591726721a:1:{s:9:"inner.htm";a:11:{s:8:"fileName";s:9:"inner.htm";s:7:"content";s:5981:"title = "inner"
+url = "/inner"
+layout = "default"
+is_hidden = 0
+show_menu = 0
+
+[builderList]
+modelClass = "Ashraf\Intergaz\Models\Intergaz"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+<main role="main">
+
+
+ <!-- inner start -->
+<div class="header_title fit_image"                  style="background-image: url({{'-wall.png'|media}});">
+    <div class="category_title">Services</div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Services</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">Inner Services</a></li>
+      </ol>
+    </nav> 
+</div>
+
+
+
+ 
+<!-- inner_page start -->
+<div class="inner_page row" >
+  <div class="side_bar col-lg-4  col-md-4  col-sm-12  col-xs-12  ">
+      <div class="side_bar_header"><img src="images/logo1.png" style="margin: 0px 9px 8px 0px;"  width="15px"/>Services</div>
+ 
+      <ul class="navbar-nav navbar-nav ">
+      
+{% for record in records %}    
+{% for row in record.services %}
+{% if record.id == 3 %}  
+      <li class="nav-item  nav_item_acitve"> <a class="nav-link dark mx-2  flex-row" href="#"><div class="side_link  fa  fa-chevron-right"> <strong>{{ row.title }}</strong></div>   </a></li>  
+
+    
+     
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+  </div>
+
+  <!-- col-8 start -->
+      
+
+
+  <div class=" col-lg-8  col-md-8  col-sm-12  col-xs-12 ">
+
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+
+
+      <div class="block block1">
+        <p class="block_title"> {{ row.block_1_title }}</p>
+        <img src="{{ row.block_1_image|media }}" width="100%" />
+        <p class="block_description">{{ row.block_1_description }}</p>
+    </div>  
+     
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+
+    <div class="block block2 row">
+          <div class="col-7 pr-0">
+              <p class="block_title mt-4">{{ row.block_2_title }}</p>
+              <p class="block_description">{{ row.block_2_description }}</p>
+          </div>
+    
+          <div class="col-5">
+                           <img src="{{ row.block_2_image|media }}" width="100%" />
+          </div>
+    </div>   
+      
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+
+    <div class="block block3 row">
+             
+          <div class="col-5">
+                           <img src="{{ row.block_3_image|media }}" width="100%" />
+          </div>
+          <div class="col-7 pr-0">
+              <p class="block_title mt-4">{{ row.block_3_title }}</p>
+              <p class="block_description">{{ row.block_3_description }}</p>
+          </div>
+
+    </div>   
+      
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+
+    <div class="block block4">
+       <p class="block_title">{{ row.block_4_title }}</p>
+       <p class="block_description">      {{ row.block_4_description }}</p>
+    </div>
+      
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+ 
+
+
+    
+      <ul class="block_list">
+       
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+{% for r in row.block_list %}
+ <li >{{ r.title }}   </li>
+ 
+{% endfor %}      
+{% endif %}
+{% endfor %}
+{% endfor %}
+      </ul>
+
+    <div class="block block5 row">
+    
+    
+    
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+{% for r in row.block_many_3 %}
+  
+  
+           <div class="col-lg-4  col-md-4  col-sm-12  col-xs-12">
+            <p class="block_sub_title">{{ r.title }} </p><img src="{{ r.image|media }} " width="100%" />
+            <p class="block_description">{{ r.descriptio }}  </p>
+           </div>
+  
+  
+{% endfor %}      
+{% endif %}
+{% endfor %}
+{% endfor %}
+    
+    
+
+
+
+
+    </div>
+    <div class="block block5 row">
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+{% for r in row.block_many_4 %}
+  
+  
+           <div class="col-lg-3  col-md-3  col-sm-12  col-xs-12">
+            <p class="block_sub_title">{{ r.title }} </p><img src="{{ r.image|media }} " width="100%" />
+            <p class="block_description">{{ r.descriptio }}  </p>
+           </div>
+  
+  
+{% endfor %}      
+{% endif %}
+{% endfor %}
+{% endfor %}
+    
+  </div>
+
+    <div class="block block7 ">
+  
+        <p class="block_title">Title</p> 
+
+        
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+  <ul id="accordion" class="accordion">
+     
+     
+     {% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+{% for r in row.block_accordion %}
+  
+ 
+  
+        <li>
+          <div class="link"> {{ r.title }}<i class="fa fa-chevron-down"></i></div>
+          <ul class="submenu">
+              <li> 
+                 <p class="block_description">{{ r.description }}</p>
+              </li>
+          </ul>
+      </li>
+{% endfor %}      
+{% endif %}
+{% endfor %}
+{% endfor %}
+     
+
+ 
+ 
+  </ul>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+  </div>
+  <!-- col-8 end -->
+
+
+
+</div>
+<!-- inner_page end -->
+
+
+
+ <!-- inner end -->
+
+ 
+</main>";s:5:"mtime";i:1591726111;s:6:"markup";s:5651:"{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+<main role="main">
+
+
+ <!-- inner start -->
+<div class="header_title fit_image"                  style="background-image: url({{'-wall.png'|media}});">
+    <div class="category_title">Services</div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Services</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">Inner Services</a></li>
+      </ol>
+    </nav> 
+</div>
+
+
+
+ 
+<!-- inner_page start -->
+<div class="inner_page row" >
+  <div class="side_bar col-lg-4  col-md-4  col-sm-12  col-xs-12  ">
+      <div class="side_bar_header"><img src="images/logo1.png" style="margin: 0px 9px 8px 0px;"  width="15px"/>Services</div>
+ 
+      <ul class="navbar-nav navbar-nav ">
+      
+{% for record in records %}    
+{% for row in record.services %}
+{% if record.id == 3 %}  
+      <li class="nav-item  nav_item_acitve"> <a class="nav-link dark mx-2  flex-row" href="#"><div class="side_link  fa  fa-chevron-right"> <strong>{{ row.title }}</strong></div>   </a></li>  
+
+    
+     
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+  </div>
+
+  <!-- col-8 start -->
+      
+
+
+  <div class=" col-lg-8  col-md-8  col-sm-12  col-xs-12 ">
+
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+
+
+      <div class="block block1">
+        <p class="block_title"> {{ row.block_1_title }}</p>
+        <img src="{{ row.block_1_image|media }}" width="100%" />
+        <p class="block_description">{{ row.block_1_description }}</p>
+    </div>  
+     
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+
+    <div class="block block2 row">
+          <div class="col-7 pr-0">
+              <p class="block_title mt-4">{{ row.block_2_title }}</p>
+              <p class="block_description">{{ row.block_2_description }}</p>
+          </div>
+    
+          <div class="col-5">
+                           <img src="{{ row.block_2_image|media }}" width="100%" />
+          </div>
+    </div>   
+      
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+
+    <div class="block block3 row">
+             
+          <div class="col-5">
+                           <img src="{{ row.block_3_image|media }}" width="100%" />
+          </div>
+          <div class="col-7 pr-0">
+              <p class="block_title mt-4">{{ row.block_3_title }}</p>
+              <p class="block_description">{{ row.block_3_description }}</p>
+          </div>
+
+    </div>   
+      
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+
+    <div class="block block4">
+       <p class="block_title">{{ row.block_4_title }}</p>
+       <p class="block_description">      {{ row.block_4_description }}</p>
+    </div>
+      
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+ 
+
+
+    
+      <ul class="block_list">
+       
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+{% for r in row.block_list %}
+ <li >{{ r.title }}   </li>
+ 
+{% endfor %}      
+{% endif %}
+{% endfor %}
+{% endfor %}
+      </ul>
+
+    <div class="block block5 row">
+    
+    
+    
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+{% for r in row.block_many_3 %}
+  
+  
+           <div class="col-lg-4  col-md-4  col-sm-12  col-xs-12">
+            <p class="block_sub_title">{{ r.title }} </p><img src="{{ r.image|media }} " width="100%" />
+            <p class="block_description">{{ r.descriptio }}  </p>
+           </div>
+  
+  
+{% endfor %}      
+{% endif %}
+{% endfor %}
+{% endfor %}
+    
+    
+
+
+
+
+    </div>
+    <div class="block block5 row">
+
+{% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+{% for r in row.block_many_4 %}
+  
+  
+           <div class="col-lg-3  col-md-3  col-sm-12  col-xs-12">
+            <p class="block_sub_title">{{ r.title }} </p><img src="{{ r.image|media }} " width="100%" />
+            <p class="block_description">{{ r.descriptio }}  </p>
+           </div>
+  
+  
+{% endfor %}      
+{% endif %}
+{% endfor %}
+{% endfor %}
+    
+  </div>
+
+    <div class="block block7 ">
+  
+        <p class="block_title">Title</p> 
+
+        
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+  <ul id="accordion" class="accordion">
+     
+     
+     {% for record in records %}    
+{% for row in record.inner %}
+{% if record.id == 16 %}  
+{% for r in row.block_accordion %}
+  
+ 
+  
+        <li>
+          <div class="link"> {{ r.title }}<i class="fa fa-chevron-down"></i></div>
+          <ul class="submenu">
+              <li> 
+                 <p class="block_description">{{ r.description }}</p>
+              </li>
+          </ul>
+      </li>
+{% endfor %}      
+{% endif %}
+{% endfor %}
+{% endfor %}
+     
+
+ 
+ 
+  </ul>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+
+  </div>
+  <!-- col-8 end -->
+
+
+
+</div>
+<!-- inner_page end -->
+
+
+
+ <!-- inner end -->
+
+ 
+</main>";s:4:"code";N;s:5:"title";s:5:"inner";s:3:"url";s:6:"/inner";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"show_menu";s:1:"0";s:11:"builderList";a:8:{s:10:"modelClass";s:31:"Ashraf\Intergaz\Models\Intergaz";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:2:"id";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

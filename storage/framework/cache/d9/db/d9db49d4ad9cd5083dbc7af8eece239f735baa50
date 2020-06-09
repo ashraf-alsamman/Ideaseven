@@ -1,0 +1,327 @@
+1591726721a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:4680:"[builderList]
+modelClass = "Ashraf\Intergaz\Models\Intergaz"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+ 
+ 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Ashraf Alsamman">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title> </title>
+
+
+    <!-- Bootstrap core CSS -->
+ 
+
+<link href="{{ 'assets/css/bootstrap.css'|theme }}" rel="stylesheet">
+<link href="{{ 'assets/css/swiper.min.css'|theme }}" rel="stylesheet">
+<link href="{{ 'assets/css/mycss.css'|theme }}" rel="stylesheet">
+<link href=  "https://use.fontawesome.com/releases/v4.7.0/css/font-awesome-css.min.css " rel="stylesheet">
+<link href=" https://use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.woff2 " rel="stylesheet">
+<link href=" https://use.fontawesome.com/718c33fc74.css " rel="stylesheet">
+ 
+
+ 
+  
+ 
+    <!-- Custom styles for this template -->
+  </head>
+  <body class="   ">
+
+    <header>
+<ul class="record-list">
+
+
+      <nav class="navbar   nav_top   ">
+ 
+        <div class="collapse navbar-collapse d-flex justify-content-end px-5" id="navbarCollapse">
+  <ul class="navbar-nav navbar-nav     flex-row  ">
+        {% for record in records %}    
+        {% for row in record.social %}
+        {% if record.id == 8 %}    
+            <li class="nav-item "> <a class="nav-link fa    {{ row.icon  }}  dark mx-2" href="{{ row.link  }}"> <span class="sr-only"> </span> </a></li>       
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+  </ul>   
+       
+          <form class="form-inline mt-2 mt-md-0     col-lg-2  col-md-2  col-sm-5  col-xs-5 "   >
+             <button class="btn    request my-2 my-sm-0" type="submit">Request a Quote</button>
+          </form>
+        </div>
+      </nav>
+ 
+   <nav class=" navbar navbar-expand-lg navbar-light bg-light  main_menu d-flex justify-content-between">
+ 
+    <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa  fa-bars"></i>
+    </button>
+ 
+    
+{% for record in records %}    
+{% if record.id == 14 %}    
+     <img src="{{record.image|media}}" alt="..." class="Responsive image main_logo">
+{% endif %}
+{% endfor %}
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        
+        {% for record in records %}    
+{% for row in record.menu %}
+{% if record.id == 13 %}   
+
+        <li class="nav-item"> <a class="nav-link" href="{{ row.link  }}| "><div id="mask-top"></div> <div id="mask-bottom"></div>{{ row.caption  }} </a> </li>
+ {% endif %}
+{% endfor %}
+{% endfor %}
+        
+        
+    
+
+ 
+        <li class="nav-item" id="search">   
+       <input type="text" placeholder="Search" class="search_input">
+       <div class="search_btn">
+         <i class="fa fa-search dark" aria-hidden="true"></i>
+       </div>
+
+      </li>
+ 
+      </ul>
+ 
+    </div>
+  </nav>
+</header>
+ 
+ 
+ 
+    {% page %}
+    
+    
+    
+    <footer class="footer  footer_buttom mx-0">
+  <div class="row mx-0">
+  
+ 
+    
+    {% for record in records %}    
+{% for row in record.footer_buttom %}
+{% if record.id == 11 %}    
+    <div class="col-sm text-center"> {{ row.caption  }} </div>
+{% endif %}
+{% endfor %}
+{% endfor %}
+    
+    
+    <div class="col-sm text-center"> 
+    
+{% for record in records %}    
+{% for row in record.footer_right %}
+{% if record.id == 12 %}   
+{{ row.caption  }}| 
+ {% endif %}
+{% endfor %}
+{% endfor %}
+     
+    
+    </div>
+    
+    
+  </div>
+</footer>
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+<script src="{{ 'assets/js/jquery.min.js'|theme }}" ></script>
+<script src="{{ 'assets/js/ontawesome.js'|theme }}" ></script>
+<script src="{{ 'assets/js/bootstrap.bundle.min.js'|theme }}" ></script>
+<script src="{{ 'assets/js/swiper.min.js'|theme }}" ></script>
+<script src="{{ 'assets/js/my_script.js'|theme }}" ></script>
+ 
+    </body>
+</html>";s:5:"mtime";i:1591715770;s:6:"markup";s:4435:"{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+ 
+ 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Ashraf Alsamman">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title> </title>
+
+
+    <!-- Bootstrap core CSS -->
+ 
+
+<link href="{{ 'assets/css/bootstrap.css'|theme }}" rel="stylesheet">
+<link href="{{ 'assets/css/swiper.min.css'|theme }}" rel="stylesheet">
+<link href="{{ 'assets/css/mycss.css'|theme }}" rel="stylesheet">
+<link href=  "https://use.fontawesome.com/releases/v4.7.0/css/font-awesome-css.min.css " rel="stylesheet">
+<link href=" https://use.fontawesome.com/releases/v4.7.0/fonts/fontawesome-webfont.woff2 " rel="stylesheet">
+<link href=" https://use.fontawesome.com/718c33fc74.css " rel="stylesheet">
+ 
+
+ 
+  
+ 
+    <!-- Custom styles for this template -->
+  </head>
+  <body class="   ">
+
+    <header>
+<ul class="record-list">
+
+
+      <nav class="navbar   nav_top   ">
+ 
+        <div class="collapse navbar-collapse d-flex justify-content-end px-5" id="navbarCollapse">
+  <ul class="navbar-nav navbar-nav     flex-row  ">
+        {% for record in records %}    
+        {% for row in record.social %}
+        {% if record.id == 8 %}    
+            <li class="nav-item "> <a class="nav-link fa    {{ row.icon  }}  dark mx-2" href="{{ row.link  }}"> <span class="sr-only"> </span> </a></li>       
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+  </ul>   
+       
+          <form class="form-inline mt-2 mt-md-0     col-lg-2  col-md-2  col-sm-5  col-xs-5 "   >
+             <button class="btn    request my-2 my-sm-0" type="submit">Request a Quote</button>
+          </form>
+        </div>
+      </nav>
+ 
+   <nav class=" navbar navbar-expand-lg navbar-light bg-light  main_menu d-flex justify-content-between">
+ 
+    <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa  fa-bars"></i>
+    </button>
+ 
+    
+{% for record in records %}    
+{% if record.id == 14 %}    
+     <img src="{{record.image|media}}" alt="..." class="Responsive image main_logo">
+{% endif %}
+{% endfor %}
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        
+        {% for record in records %}    
+{% for row in record.menu %}
+{% if record.id == 13 %}   
+
+        <li class="nav-item"> <a class="nav-link" href="{{ row.link  }}| "><div id="mask-top"></div> <div id="mask-bottom"></div>{{ row.caption  }} </a> </li>
+ {% endif %}
+{% endfor %}
+{% endfor %}
+        
+        
+    
+
+ 
+        <li class="nav-item" id="search">   
+       <input type="text" placeholder="Search" class="search_input">
+       <div class="search_btn">
+         <i class="fa fa-search dark" aria-hidden="true"></i>
+       </div>
+
+      </li>
+ 
+      </ul>
+ 
+    </div>
+  </nav>
+</header>
+ 
+ 
+ 
+    {% page %}
+    
+    
+    
+    <footer class="footer  footer_buttom mx-0">
+  <div class="row mx-0">
+  
+ 
+    
+    {% for record in records %}    
+{% for row in record.footer_buttom %}
+{% if record.id == 11 %}    
+    <div class="col-sm text-center"> {{ row.caption  }} </div>
+{% endif %}
+{% endfor %}
+{% endfor %}
+    
+    
+    <div class="col-sm text-center"> 
+    
+{% for record in records %}    
+{% for row in record.footer_right %}
+{% if record.id == 12 %}   
+{{ row.caption  }}| 
+ {% endif %}
+{% endfor %}
+{% endfor %}
+     
+    
+    </div>
+    
+    
+  </div>
+</footer>
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+<script src="{{ 'assets/js/jquery.min.js'|theme }}" ></script>
+<script src="{{ 'assets/js/ontawesome.js'|theme }}" ></script>
+<script src="{{ 'assets/js/bootstrap.bundle.min.js'|theme }}" ></script>
+<script src="{{ 'assets/js/swiper.min.js'|theme }}" ></script>
+<script src="{{ 'assets/js/my_script.js'|theme }}" ></script>
+ 
+    </body>
+</html>";s:4:"code";N;s:11:"builderList";a:8:{s:10:"modelClass";s:31:"Ashraf\Intergaz\Models\Intergaz";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:2:"id";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

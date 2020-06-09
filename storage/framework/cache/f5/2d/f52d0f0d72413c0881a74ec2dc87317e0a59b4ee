@@ -1,0 +1,41 @@
+1591716268a:1:{s:11:"justfor.htm";a:10:{s:8:"fileName";s:11:"justfor.htm";s:7:"content";s:621:"title = "justfor"
+url = "/justfor"
+is_hidden = 0
+show_menu = 0
+
+[builderDetails]
+modelClass = "Ashraf\Intergaz\Models\Intergaz"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "all_data"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+
+
+    {% for record in records %}
+  {% if record.title == 'news' %}
+555555555
+{% endif %}     
+
+        
+    {% else %}
+        <li class="no-data">{{ noRecordsMessage }}</li>
+    {% endfor %}";s:5:"mtime";i:1591613098;s:6:"markup";s:362:"{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+
+
+    {% for record in records %}
+  {% if record.title == 'news' %}
+555555555
+{% endif %}     
+
+        
+    {% else %}
+        <li class="no-data">{{ noRecordsMessage }}</li>
+    {% endfor %}";s:4:"code";N;s:5:"title";s:7:"justfor";s:3:"url";s:8:"/justfor";s:9:"is_hidden";s:1:"0";s:9:"show_menu";s:1:"0";s:14:"builderDetails";a:5:{s:10:"modelClass";s:31:"Ashraf\Intergaz\Models\Intergaz";s:15:"identifierValue";s:9:"{{ :id }}";s:14:"modelKeyColumn";s:2:"id";s:13:"displayColumn";s:8:"all_data";s:15:"notFoundMessage";s:16:"Record not found";}}}

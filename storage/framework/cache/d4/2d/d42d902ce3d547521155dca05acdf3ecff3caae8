@@ -1,0 +1,975 @@
+1591726721a:1:{s:8:"home.htm";a:11:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:14648:"title = "home"
+url = "/home"
+layout = "default"
+is_hidden = 0
+show_menu = 0
+
+[builderList]
+modelClass = "Ashraf\Intergaz\Models\Intergaz"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+<main role="main">
+
+       <div class="swiper-container swiper5  ">
+        <div class="swiper-wrapper">
+  <!-- //////////// -->
+ 
+ {% for record in records %}
+{% for row in record.solutions %}
+{% if record.id == 2 %}                
+                    
+
+
+      <div class="swiper-slide  slide5">  <!--  carousel-item start -->
+        <img src="{{row.bg_image |media}}"  width="100%" height="100%"/>
+         <div class="container">
+
+          <div class="carousel-caption text-left">
+            <div class="get_solution">
+            <h1>{{ row.title|raw  }}  </h1> 
+            <div class="descriptive_text">{{ row.description }} </div>
+            <p><a class="btn btn-lg request_a_quote my-10"    href="{{ row.request_a_quote }}" role="button">Request a Quote</a></p>  
+            </div>
+            
+
+
+
+
+            <div class="white_box container row"><!-- White box start -->
+
+              <div class="inner_white_box col-lg-3 col-md-3 col-sm-12 col-xs-12  "><!-- inner_white_boxstart -->
+                      <div class="logo_in_a_circle"><img src="{{row.block_1_image |media}}" alt="..."   width="40px"  class="Responsive image logo_with_text"></div>
+                      <div class="white_box_title"> {{ row.block_1_title }}" </div>
+                      <div class="white_box_description">{{ row.block_1_description }} </div>
+                       <a class="btn btn-lg btn-primary btn_explorer" href="{{ row.block_1_link }} " role="button">Explorer</a>  
+              </div><!-- inner_white_box end -->
+
+              <div class="inner_white_box  col-lg-3 col-md-3 col-sm-12 col-xs-12 "><!-- inner_white_boxstart -->
+                <div class=  " justify-content-center"><img src="{{row.block_2_image |media}}" alt="..."   width="40px"  class="Responsive image logo_with_text">  <div  class="logo_with_bottom_border">qq</div></div>
+                <div class="white_box_title"> {{ row.block_2_title }} </div>
+                <div class="white_box_description">{{ row.block_2_description }}  </div>
+              </div><!-- inner_white_box end -->
+              
+              <div class="inner_white_box  col-lg-3 col-md-3 col-sm-12 col-xs-12 "><!-- inner_white_boxstart -->
+                <div class=  " justify-content-center"><img src="{{row.block_3_image |media}}" alt="..."   width="40px"  class="Responsive image logo_with_text">  <div  class="logo_with_bottom_border">qq</div></div>
+                <div class="white_box_title"> {{ row.block_3_title }} </div>
+                <div class="white_box_description">{{ row.block_3_description }}  </div>
+              </div><!-- inner_white_box end -->
+              
+              <div class="inner_white_box col-lg-3 col-md-3 col-sm-12 col-xs-12  "><!-- inner_white_boxstart -->
+                      <div class="logo_in_a_circle"><img src="{{row.block_4_image |media}}" alt="..."   width="40px"  class="Responsive image logo_with_text"></div>
+                      <div class="white_box_title"> {{ row.block_4_title }}" </div>
+                      <div class="white_box_description">{{ row.block_4_description }} </div>
+                       <a class="btn btn-lg btn-primary btn_explorer" href="{{ row.block_4_link }} " role="button">Explorer</a>  
+              </div><!-- inner_white_box end -->       
+           </div><!-- White box end -->
+
+
+
+<div class="footer_white_box row">{{ row.footer|raw }}</div>
+
+
+
+
+
+          </div>
+      
+        </div>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+      </div>   <!--  carousel-item end -->
+      
+{% endif %}
+{% endfor %}
+{% endfor %}
+<!--  ////////////// -->
+ 
+    </div>
+     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+ 
+<div class="section_header   ">
+{% for record in records %}    
+{% if record.id == 15 %}    
+   <div class="section_logo"><img src="{{ record.image|media}}" width="145" height="30"/></div>
+{% endif %}
+{% endfor %}
+
+ {% for record in records %}    
+ {% if record.id == 3 %}    
+
+  <div class="section_title"> {{ record.title }}</div>
+  <div class="section_description">{{ record.description|raw }} </div>
+</div> 
+      
+ {% endif %}
+ {% endfor %}
+
+  <!-- Services start -->
+  <div class="swiper-container swiper">
+    <div class="swiper-wrapper">
+    
+{% for record in records %}    
+{% for row in record.services %}
+{% if record.id == 3 %}    
+      <div class="swiper-slide" style="height: 416.5px; background-image: url({{row.bg_image |media}});">
+          <div class="service" >
+            <div class="service_icon" ><img  src="{{row.icon |media}}" /></div>
+            <div class="service_title" >{{row.title }}</div>
+            <div class="service_description" >{{row.description|raw }}</div>
+            <a class="service_link" href="{{row.link }}">Learn More</a>
+          </div>
+      </div>
+      
+ {% endif %}
+{% endfor %}
+{% endfor %}
+ 
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- Services end -->
+
+
+<!-- Products start -->
+<div class="products"> 
+
+
+<div class="section_header" style="background-color: transparent;">
+{% for record in records %}    
+{% if record.id == 15 %}    
+   <div class="section_logo"><img src="{{ record.image|media}}" width="145" height="30"/></div>
+{% endif %}
+{% endfor %}
+
+
+{% for record in records %}    
+{% if record.id == 4 %}    
+  <div class="section_title">{{ record.title}}</div>
+  <div class="section_description">{{ record.description|raw}}</div> 
+{% endif %}
+{% endfor %}
+
+</div> 
+
+
+
+<div  class="swiper_con">
+<div class="swiper-container  swiper2 ">
+  <div class="swiper-wrapper">
+   
+   
+   
+
+
+ {% for record in records %}
+{% for row in record.products %}
+{% if record.id == 4 %}                
+                    
+     <div class="swiper-slide slide2">
+                      <div class="col-md-6 fit-image products_image" style=" background-image: url({{row.image |media}});">   </div>
+        <div class="col-md-6 product_{{ row.style }}"    > 
+            <div class="product_title">{{ row.title }}  </div> 
+            <div class="product_description">{{ row.description|raw }}</div>
+            <button class="btn" type="submit">Read More</button>
+        </div>
+    </div>
+{% endif %}
+{% endfor %}
+{% endfor %}
+ 
+  </div>
+
+ 
+</div>
+
+<div class="swiper-button-prev  my_prev"></div>
+<div class="swiper-button-next   my_next"></div>
+</div>
+
+
+
+
+
+
+</div> <!-- Products end -->
+
+
+
+
+ 
+
+
+<!-- news start -->
+<div class="news"> <div class="news_con"> 
+
+<div class="news_header "><!-- news header --> 
+  <div class="section_header  " style="background-color: transparent;">
+{% for record in records %}    
+{% if record.id == 15 %}    
+   <div class="section_logo"><img src="{{ record.image|media}}" width="145" height="30"/></div>
+{% endif %}
+{% endfor %}
+
+{% for record in records %}    
+{% if record.id == 1 %}    
+  <div class="section_title">{{ record.title}}</div>
+  <div class="section_description">{{ record.description|raw}}</div> 
+{% endif %}
+{% endfor %}
+
+  </div> 
+  <div   style="margin-top: -85px;">       <button class="col-md-2 offset-md-10 btn view_all"  type="submit">View All</button></div>
+</div><!-- news_header end -->
+
+ 
+<div class="swiper-container latest_news-container">
+<div class=" latest_news  swiper-wrapper   ">
+ 
+ 
+ 
+{% for record in records %}
+{% for row in record.news %}
+
+{% if record.id == 1 %}                
+                                
+            <div class="  swiper-slide latest_news_block">
+            
+                <div class="latest_news_image" style="background-image: url({{row.mediafinder1 |media}});  "></div>
+                <div class="latest_news_title"> {{ row.title }}</div>
+                <ul class="about_news"><li>{{ row.category }}</li><li>By {{ row.author }} </li></ul>
+                <div class="latest_news_description">{{ row.description|raw }} </div>
+                <button class="btn btn_read_more" type="submit">Read More</button>
+              </div>
+{% endif %}
+
+{% endfor %}
+{% endfor %} 
+ 
+
+
+</div>
+</div>
+</div></div>
+<!-- news end -->
+
+
+
+
+<nav  class="navbar navbar-expand-md" style="background-color: #f9f9f9;">
+   <div class="collapse navbar-collapse d-flex justify-content-end px-5 m-auto" id="navbarCollapse">
+ 
+  <ul class="navbar-nav navbar-nav  flex-row m-auto ">
+        {% for record in records %}    
+        {% for row in record.social %}
+        {% if record.id == 8 %}    
+            <li class="nav-item "> <a class="nav-link fa    {{ row.icon  }}  dark mx-2" href="{{ row.link  }}> <span class="sr-only"> </span> </a></li>       
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+  </ul>            
+  </div>
+</nav>
+
+
+
+<div class="partners">
+
+
+ {% for record in records %}    
+ {% if record.id == 5 %}    
+ 
+  <div class="partners_title">  {{ record.title  }}</div>
+
+ {% endif %}
+ {% endfor %}
+
+
+
+
+<!-- partners start -->
+<div class="swiper-container partners_container">
+  <div class="swiper-wrapper">
+ 
+ {% for record in records %}
+{% for row in record.partners %}
+{% if record.id == 5 %}                
+                    
+     <div class="swiper-slide  partners_slide"  style=" height: 212px; background-image: url({{row.image |media}});"></div>
+
+{% endif %}
+{% endfor %}
+{% endfor %}
+   
+    
+  </div>
+ 
+</div>
+<!-- partners end -->
+
+
+
+
+<button class="btn partners_read_more" type="submit">Read More</button>
+ 
+</div>
+
+
+
+<!-- subscription start -->
+ {% for record in records %}    
+ {% if record.id == 6 %}    
+ 
+
+
+
+<div class="subscription"    style="background-image: url({{ record.bg_image|media  }});">
+    <div class="section_logo"><img src="{{ record.image|media  }}" width="145" height="30"></div>
+    <div class="subscription_title">{{ record.title  }}</div>
+    <div class="subscription_description">{{ record.description|raw  }}</div>
+
+
+    <div class="buttonInside">
+                  <input placeholder="Enter your email address">
+                  <button id="erase " class="btn">subscribe</button>
+     </div>
+
+
+</div>
+      
+ {% endif %}
+ {% endfor %}
+
+
+<!-- subscription end -->
+
+ 
+
+
+<div   class="footer row mx-0">
+  <div class=" col-3">
+    {% for record in records %}    
+{% if record.id == 14 %}    
+          <div class="footer_contact_us_logo"><img src="{{ record.image|media}}" width="130px"></div>
+
+{% endif %}
+{% endfor %}
+    
+{% for record in records %}    
+{% if record.id == 7 %}    
+    <div class="footer_contact_us_address mt-3">{{ record.description|raw }}</div>    
+{% endif %}
+{% endfor %}
+    
+
+   
+  <ul class="navbar-nav navbar-nav col-lg-2  col-md-2  col-sm-9  col-xs-9  flex-row ">
+        {% for record in records %}    
+        {% for row in record.social %}
+        {% if record.id == 8 %}    
+            <li class="nav-item "> <a class="nav-link fa    {{ row.icon  }}  dark mx-2" href="{{ row.link  }}> <span class="sr-only"> </span> </a></li>       
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+  </ul>
+  
+   </div>
+
+
+<div class="footer_item col-2">
+<div class="footer_item_title">Quick Links</div>
+<div class="footer_item_data">
+<ul class="navbar-nav navbar-nav     ">
+{% for record in records %}    
+{% for row in record.quick_links %}
+{% if record.id == 9 %}    
+<li class="nav-item "> <a class="nav-link dark mx-2  flex-row" href=" {{ row.link  }} "><div class="footer_link  fa  fa-chevron-right">&nbsp;&nbsp;<strong> {{ row.caption  }}</strong></div>   </a></li>  
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+</div>
+
+
+<div class="footer_item col-2">
+<div class="footer_item_title">Quick Links</div>
+<div class="footer_item_data">
+<ul class="navbar-nav navbar-nav      ">
+{% for record in records %}    
+{% for row in record.products %}
+{% if record.id == 4 %}    
+<li class="nav-item "> <a class="nav-link dark mx-2  flex-row" href=" {{ row.link  }} "><div class="footer_link  fa  fa-chevron-right">&nbsp;&nbsp;<strong> {{ row.title  }}</strong></div>   </a></li>  
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+</div>
+
+<div class="footer_item col-2">
+<div class="footer_item_title">Quick Links</div>
+<div class="footer_item_data">
+<ul class="navbar-nav navbar-nav    ">
+{% for record in records %}    
+{% for row in record.services %}
+{% if record.id == 3 %}    
+<li class="nav-item "> <a class="nav-link dark mx-2  flex-row" href=" {{ row.link  }} "><div class="footer_link  fa  fa-chevron-right">&nbsp;&nbsp;<strong> {{ row.title  }}</strong></div>   </a></li>  
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+</div>
+
+
+
+<div class="footer_item col-3 ">
+<div class="footer_item_title">Latest posts from our blogs</div>
+<div class="footer_item_data">
+<ul class="navbar-nav navbar-nav    ">
+{% for record in records %}    
+{% for row in record.posts %}
+{% if record.id == 10 %}    
+<li class="nav-item "  style="border-bottom: 1px solid #c4c4c4;"> <a class="nav-link dark mx-2  flex-row" href=" {{ row.link  }} "><div class="footer_link  fa  fa-chevron-right">&nbsp;&nbsp;<strong> {{ row.title  }}</strong></div>   </a></li>  
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</main>";s:5:"mtime";i:1591715667;s:6:"markup";s:14320:"{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+<main role="main">
+
+       <div class="swiper-container swiper5  ">
+        <div class="swiper-wrapper">
+  <!-- //////////// -->
+ 
+ {% for record in records %}
+{% for row in record.solutions %}
+{% if record.id == 2 %}                
+                    
+
+
+      <div class="swiper-slide  slide5">  <!--  carousel-item start -->
+        <img src="{{row.bg_image |media}}"  width="100%" height="100%"/>
+         <div class="container">
+
+          <div class="carousel-caption text-left">
+            <div class="get_solution">
+            <h1>{{ row.title|raw  }}  </h1> 
+            <div class="descriptive_text">{{ row.description }} </div>
+            <p><a class="btn btn-lg request_a_quote my-10"    href="{{ row.request_a_quote }}" role="button">Request a Quote</a></p>  
+            </div>
+            
+
+
+
+
+            <div class="white_box container row"><!-- White box start -->
+
+              <div class="inner_white_box col-lg-3 col-md-3 col-sm-12 col-xs-12  "><!-- inner_white_boxstart -->
+                      <div class="logo_in_a_circle"><img src="{{row.block_1_image |media}}" alt="..."   width="40px"  class="Responsive image logo_with_text"></div>
+                      <div class="white_box_title"> {{ row.block_1_title }}" </div>
+                      <div class="white_box_description">{{ row.block_1_description }} </div>
+                       <a class="btn btn-lg btn-primary btn_explorer" href="{{ row.block_1_link }} " role="button">Explorer</a>  
+              </div><!-- inner_white_box end -->
+
+              <div class="inner_white_box  col-lg-3 col-md-3 col-sm-12 col-xs-12 "><!-- inner_white_boxstart -->
+                <div class=  " justify-content-center"><img src="{{row.block_2_image |media}}" alt="..."   width="40px"  class="Responsive image logo_with_text">  <div  class="logo_with_bottom_border">qq</div></div>
+                <div class="white_box_title"> {{ row.block_2_title }} </div>
+                <div class="white_box_description">{{ row.block_2_description }}  </div>
+              </div><!-- inner_white_box end -->
+              
+              <div class="inner_white_box  col-lg-3 col-md-3 col-sm-12 col-xs-12 "><!-- inner_white_boxstart -->
+                <div class=  " justify-content-center"><img src="{{row.block_3_image |media}}" alt="..."   width="40px"  class="Responsive image logo_with_text">  <div  class="logo_with_bottom_border">qq</div></div>
+                <div class="white_box_title"> {{ row.block_3_title }} </div>
+                <div class="white_box_description">{{ row.block_3_description }}  </div>
+              </div><!-- inner_white_box end -->
+              
+              <div class="inner_white_box col-lg-3 col-md-3 col-sm-12 col-xs-12  "><!-- inner_white_boxstart -->
+                      <div class="logo_in_a_circle"><img src="{{row.block_4_image |media}}" alt="..."   width="40px"  class="Responsive image logo_with_text"></div>
+                      <div class="white_box_title"> {{ row.block_4_title }}" </div>
+                      <div class="white_box_description">{{ row.block_4_description }} </div>
+                       <a class="btn btn-lg btn-primary btn_explorer" href="{{ row.block_4_link }} " role="button">Explorer</a>  
+              </div><!-- inner_white_box end -->       
+           </div><!-- White box end -->
+
+
+
+<div class="footer_white_box row">{{ row.footer|raw }}</div>
+
+
+
+
+
+          </div>
+      
+        </div>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+      </div>   <!--  carousel-item end -->
+      
+{% endif %}
+{% endfor %}
+{% endfor %}
+<!--  ////////////// -->
+ 
+    </div>
+     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+ 
+<div class="section_header   ">
+{% for record in records %}    
+{% if record.id == 15 %}    
+   <div class="section_logo"><img src="{{ record.image|media}}" width="145" height="30"/></div>
+{% endif %}
+{% endfor %}
+
+ {% for record in records %}    
+ {% if record.id == 3 %}    
+
+  <div class="section_title"> {{ record.title }}</div>
+  <div class="section_description">{{ record.description|raw }} </div>
+</div> 
+      
+ {% endif %}
+ {% endfor %}
+
+  <!-- Services start -->
+  <div class="swiper-container swiper">
+    <div class="swiper-wrapper">
+    
+{% for record in records %}    
+{% for row in record.services %}
+{% if record.id == 3 %}    
+      <div class="swiper-slide" style="height: 416.5px; background-image: url({{row.bg_image |media}});">
+          <div class="service" >
+            <div class="service_icon" ><img  src="{{row.icon |media}}" /></div>
+            <div class="service_title" >{{row.title }}</div>
+            <div class="service_description" >{{row.description|raw }}</div>
+            <a class="service_link" href="{{row.link }}">Learn More</a>
+          </div>
+      </div>
+      
+ {% endif %}
+{% endfor %}
+{% endfor %}
+ 
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- Services end -->
+
+
+<!-- Products start -->
+<div class="products"> 
+
+
+<div class="section_header" style="background-color: transparent;">
+{% for record in records %}    
+{% if record.id == 15 %}    
+   <div class="section_logo"><img src="{{ record.image|media}}" width="145" height="30"/></div>
+{% endif %}
+{% endfor %}
+
+
+{% for record in records %}    
+{% if record.id == 4 %}    
+  <div class="section_title">{{ record.title}}</div>
+  <div class="section_description">{{ record.description|raw}}</div> 
+{% endif %}
+{% endfor %}
+
+</div> 
+
+
+
+<div  class="swiper_con">
+<div class="swiper-container  swiper2 ">
+  <div class="swiper-wrapper">
+   
+   
+   
+
+
+ {% for record in records %}
+{% for row in record.products %}
+{% if record.id == 4 %}                
+                    
+     <div class="swiper-slide slide2">
+                      <div class="col-md-6 fit-image products_image" style=" background-image: url({{row.image |media}});">   </div>
+        <div class="col-md-6 product_{{ row.style }}"    > 
+            <div class="product_title">{{ row.title }}  </div> 
+            <div class="product_description">{{ row.description|raw }}</div>
+            <button class="btn" type="submit">Read More</button>
+        </div>
+    </div>
+{% endif %}
+{% endfor %}
+{% endfor %}
+ 
+  </div>
+
+ 
+</div>
+
+<div class="swiper-button-prev  my_prev"></div>
+<div class="swiper-button-next   my_next"></div>
+</div>
+
+
+
+
+
+
+</div> <!-- Products end -->
+
+
+
+
+ 
+
+
+<!-- news start -->
+<div class="news"> <div class="news_con"> 
+
+<div class="news_header "><!-- news header --> 
+  <div class="section_header  " style="background-color: transparent;">
+{% for record in records %}    
+{% if record.id == 15 %}    
+   <div class="section_logo"><img src="{{ record.image|media}}" width="145" height="30"/></div>
+{% endif %}
+{% endfor %}
+
+{% for record in records %}    
+{% if record.id == 1 %}    
+  <div class="section_title">{{ record.title}}</div>
+  <div class="section_description">{{ record.description|raw}}</div> 
+{% endif %}
+{% endfor %}
+
+  </div> 
+  <div   style="margin-top: -85px;">       <button class="col-md-2 offset-md-10 btn view_all"  type="submit">View All</button></div>
+</div><!-- news_header end -->
+
+ 
+<div class="swiper-container latest_news-container">
+<div class=" latest_news  swiper-wrapper   ">
+ 
+ 
+ 
+{% for record in records %}
+{% for row in record.news %}
+
+{% if record.id == 1 %}                
+                                
+            <div class="  swiper-slide latest_news_block">
+            
+                <div class="latest_news_image" style="background-image: url({{row.mediafinder1 |media}});  "></div>
+                <div class="latest_news_title"> {{ row.title }}</div>
+                <ul class="about_news"><li>{{ row.category }}</li><li>By {{ row.author }} </li></ul>
+                <div class="latest_news_description">{{ row.description|raw }} </div>
+                <button class="btn btn_read_more" type="submit">Read More</button>
+              </div>
+{% endif %}
+
+{% endfor %}
+{% endfor %} 
+ 
+
+
+</div>
+</div>
+</div></div>
+<!-- news end -->
+
+
+
+
+<nav  class="navbar navbar-expand-md" style="background-color: #f9f9f9;">
+   <div class="collapse navbar-collapse d-flex justify-content-end px-5 m-auto" id="navbarCollapse">
+ 
+  <ul class="navbar-nav navbar-nav  flex-row m-auto ">
+        {% for record in records %}    
+        {% for row in record.social %}
+        {% if record.id == 8 %}    
+            <li class="nav-item "> <a class="nav-link fa    {{ row.icon  }}  dark mx-2" href="{{ row.link  }}> <span class="sr-only"> </span> </a></li>       
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+  </ul>            
+  </div>
+</nav>
+
+
+
+<div class="partners">
+
+
+ {% for record in records %}    
+ {% if record.id == 5 %}    
+ 
+  <div class="partners_title">  {{ record.title  }}</div>
+
+ {% endif %}
+ {% endfor %}
+
+
+
+
+<!-- partners start -->
+<div class="swiper-container partners_container">
+  <div class="swiper-wrapper">
+ 
+ {% for record in records %}
+{% for row in record.partners %}
+{% if record.id == 5 %}                
+                    
+     <div class="swiper-slide  partners_slide"  style=" height: 212px; background-image: url({{row.image |media}});"></div>
+
+{% endif %}
+{% endfor %}
+{% endfor %}
+   
+    
+  </div>
+ 
+</div>
+<!-- partners end -->
+
+
+
+
+<button class="btn partners_read_more" type="submit">Read More</button>
+ 
+</div>
+
+
+
+<!-- subscription start -->
+ {% for record in records %}    
+ {% if record.id == 6 %}    
+ 
+
+
+
+<div class="subscription"    style="background-image: url({{ record.bg_image|media  }});">
+    <div class="section_logo"><img src="{{ record.image|media  }}" width="145" height="30"></div>
+    <div class="subscription_title">{{ record.title  }}</div>
+    <div class="subscription_description">{{ record.description|raw  }}</div>
+
+
+    <div class="buttonInside">
+                  <input placeholder="Enter your email address">
+                  <button id="erase " class="btn">subscribe</button>
+     </div>
+
+
+</div>
+      
+ {% endif %}
+ {% endfor %}
+
+
+<!-- subscription end -->
+
+ 
+
+
+<div   class="footer row mx-0">
+  <div class=" col-3">
+    {% for record in records %}    
+{% if record.id == 14 %}    
+          <div class="footer_contact_us_logo"><img src="{{ record.image|media}}" width="130px"></div>
+
+{% endif %}
+{% endfor %}
+    
+{% for record in records %}    
+{% if record.id == 7 %}    
+    <div class="footer_contact_us_address mt-3">{{ record.description|raw }}</div>    
+{% endif %}
+{% endfor %}
+    
+
+   
+  <ul class="navbar-nav navbar-nav col-lg-2  col-md-2  col-sm-9  col-xs-9  flex-row ">
+        {% for record in records %}    
+        {% for row in record.social %}
+        {% if record.id == 8 %}    
+            <li class="nav-item "> <a class="nav-link fa    {{ row.icon  }}  dark mx-2" href="{{ row.link  }}> <span class="sr-only"> </span> </a></li>       
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+  </ul>
+  
+   </div>
+
+
+<div class="footer_item col-2">
+<div class="footer_item_title">Quick Links</div>
+<div class="footer_item_data">
+<ul class="navbar-nav navbar-nav     ">
+{% for record in records %}    
+{% for row in record.quick_links %}
+{% if record.id == 9 %}    
+<li class="nav-item "> <a class="nav-link dark mx-2  flex-row" href=" {{ row.link  }} "><div class="footer_link  fa  fa-chevron-right">&nbsp;&nbsp;<strong> {{ row.caption  }}</strong></div>   </a></li>  
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+</div>
+
+
+<div class="footer_item col-2">
+<div class="footer_item_title">Quick Links</div>
+<div class="footer_item_data">
+<ul class="navbar-nav navbar-nav      ">
+{% for record in records %}    
+{% for row in record.products %}
+{% if record.id == 4 %}    
+<li class="nav-item "> <a class="nav-link dark mx-2  flex-row" href=" {{ row.link  }} "><div class="footer_link  fa  fa-chevron-right">&nbsp;&nbsp;<strong> {{ row.title  }}</strong></div>   </a></li>  
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+</div>
+
+<div class="footer_item col-2">
+<div class="footer_item_title">Quick Links</div>
+<div class="footer_item_data">
+<ul class="navbar-nav navbar-nav    ">
+{% for record in records %}    
+{% for row in record.services %}
+{% if record.id == 3 %}    
+<li class="nav-item "> <a class="nav-link dark mx-2  flex-row" href=" {{ row.link  }} "><div class="footer_link  fa  fa-chevron-right">&nbsp;&nbsp;<strong> {{ row.title  }}</strong></div>   </a></li>  
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+</div>
+
+
+
+<div class="footer_item col-3 ">
+<div class="footer_item_title">Latest posts from our blogs</div>
+<div class="footer_item_data">
+<ul class="navbar-nav navbar-nav    ">
+{% for record in records %}    
+{% for row in record.posts %}
+{% if record.id == 10 %}    
+<li class="nav-item "  style="border-bottom: 1px solid #c4c4c4;"> <a class="nav-link dark mx-2  flex-row" href=" {{ row.link  }} "><div class="footer_link  fa  fa-chevron-right">&nbsp;&nbsp;<strong> {{ row.title  }}</strong></div>   </a></li>  
+{% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</main>";s:4:"code";N;s:5:"title";s:4:"home";s:3:"url";s:5:"/home";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"show_menu";s:1:"0";s:11:"builderList";a:8:{s:10:"modelClass";s:31:"Ashraf\Intergaz\Models\Intergaz";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:2:"id";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

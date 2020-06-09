@@ -1,0 +1,12 @@
+1591716268a:1:{s:10:"author.htm";a:12:{s:8:"fileName";s:10:"author.htm";s:7:"content";s:222:"title = "author"
+url = "/test"
+is_hidden = 0
+menu_text = "zzzzzzzzzzzzzzzzzzzz"
+menu_order = 1
+show_menu = 1
+
+[simpleMenu]
+main-ul-class = "nav navbar-nav"
+active-class = "active"
+==
+{% component 'simpleMenu' %}";s:5:"mtime";i:1591075530;s:6:"markup";s:28:"{% component 'simpleMenu' %}";s:4:"code";N;s:5:"title";s:6:"author";s:3:"url";s:5:"/test";s:9:"is_hidden";s:1:"0";s:9:"menu_text";s:20:"zzzzzzzzzzzzzzzzzzzz";s:10:"menu_order";s:1:"1";s:9:"show_menu";s:1:"1";s:10:"simpleMenu";a:2:{s:13:"main-ul-class";s:14:"nav navbar-nav";s:12:"active-class";s:6:"active";}}}

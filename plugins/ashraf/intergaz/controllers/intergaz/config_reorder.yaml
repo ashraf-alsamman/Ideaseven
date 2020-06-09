@@ -1,0 +1,4 @@
+title: Intergaz
+modelClass: Ashraf\Intergaz\Models\Intergaz
+toolbar:
+    buttons: reorder_toolbar
